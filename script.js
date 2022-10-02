@@ -2,24 +2,49 @@ const btn = document.querySelector(".btn");
 const marul = document.querySelector("#marul");
 const domates = document.querySelector("#domates");
 const sogan = document.querySelector("#sogan");
+const peynir = document.querySelector("#peynir");
+const tursu = document.querySelector("#tursu");
 const display = document.querySelector(".display");
 
 btn.addEventListener("click", () => {
-  console.log("sipariş verildi canım");
+  display.textContent = "sipariş verildi canım";
   if (marul.checked) {
-    console.log("marul alındı canım");
+    setTimeout(() => {
+      display.textContent = "marul alındı canım";
+    }, 2000);
   } else {
-    console.log("marul kalmadı canııııııım");
+    display.textContent = "marul kalmadı canııııııım";
   }
   if (domates.checked) {
-    console.log("domates alındı canım");
+    setTimeout(() => {
+      display.textContent = "domates alındı canım";
+    }, 3000);
   } else {
-    console.log("domates kalmadı canııııııım");
+    display.textContent = "domates kalmadı canııııııım";
   }
   if (sogan.checked) {
-    console.log("sogan alındı canım");
+    setTimeout(() => {
+      display.textContent = "sogan alındı canım";
+    }, 4000);
   } else {
-    console.log("sogan kalmadı canııııııım");
+    display.textContent = "sogan kalmadı canııııııım";
   }
-  display.textContent = "siparişiniz hazır";
+  if (peynir.checked) {
+    setTimeout(() => {
+      display.textContent = "peynir alındı canım";
+    }, 5000);
+  } else {
+    display.textContent = "peynir kalmadı canııııııım";
+  }
+  if (tursu.checked) {
+    setTimeout(() => {
+      display.textContent = "turşu alındı canım";
+    }, 6000);
+  } else {
+    display.textContent = "turşu kalmadı canııııııım";
+  }
+  setTimeout(() => {
+    display.textContent = "siparişiniz hazır";
+  }, 7000);
 });
+//hepsi olsun çok açım butonu yap ÖDEV!!!!
